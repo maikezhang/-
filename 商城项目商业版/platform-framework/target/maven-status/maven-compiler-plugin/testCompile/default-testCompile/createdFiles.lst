@@ -1,0 +1,5 @@
+com/platform/BaseSpringTestCase.class
+com/platform/controller/TestSysUserController.class
+com/platform/dao/TestSysUserDao.class
+com/platform/service/impl/TestSysUserServiceImpl.class
+com/platform/service/TestSysUserService.class

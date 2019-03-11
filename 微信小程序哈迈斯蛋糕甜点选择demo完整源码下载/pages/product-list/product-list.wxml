@@ -1,0 +1,13 @@
+
+<view class="product-list-container">
+  <view class="product-list" wx:for="{{products}}" wx:key="*this" wx:for-index="idx" wx:for-item="catalog">    
+    <text class="product-title">{{catalog.title}}</text>
+    <text class="product-desc">{{catalog.desc}}</text>
+    <view class="product-item" wx:for="{{catalog.items}}" wx:key="*this" wx:for-index="item-idx" wx:for-item="product">
+      <image class="product-img" mode="scaleToFill" data-name='{{product.name}}' data-img="{{product.image}}" bindtap="showImg" src='{{product.image}}'></image>
+      <text class="product-name">{{product.name}}</text>
+      <text class="product-price">    ￥{{product.price}}</text>
+    </view>
+  </view>
+</view>
+

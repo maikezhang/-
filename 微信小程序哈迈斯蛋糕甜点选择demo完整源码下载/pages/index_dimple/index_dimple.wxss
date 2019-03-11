@@ -1,0 +1,225 @@
+/* page{  
+  height: 100%;  
+  background-color: #F3F4F6;
+} 
+/* 单个图片容器的样式 */
+/*
+.img_item {
+  width: 48.5%;
+
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  font-size: 24rpx;
+  border-radius: 2px;
+
+}
+
+.goods{
+ display: flex;
+
+}
+
+
+
+
+.item_info{
+  border-top:1px dashed red;
+}
+.product-name{
+  color: #000;
+
+  text-align:left;
+   margin: 0px 5px; 
+   margin-bottom: 5px; 
+}
+.product-price-wrap .product-price-new{
+  color: #e80080;
+  margin-left:5px;
+  font-weight:900;
+}
+.product-price-wrap .product-price-old{
+  color: #888;
+  text-decoration: line-through;
+  padding-left: 2px;
+}
+.product-price-wrap .discount{
+  margin-left: 30px;
+  background-color: #000;
+  color: #fff;
+} */
+
+
+.tab-h{
+    height: 80rpx;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: rgba(214, 205, 205, 0.671); 
+    font-size: 16px; 
+    white-space: nowrap;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 99;
+}
+.tab-item{margin:0 36rpx;display: inline-block;}
+.tab-item.active{color: #4675F9;position: relative;}
+.tab-item.active:after{ content: "";display: block;height: 8rpx;width: 52rpx;background: #4675F9;position: absolute; bottom: 0;left: 5rpx;border-radius: 16rpx;}
+.item-ans{ width: 100%;display: flex; flex-grow: row no-wrap;justify-content: space-between; padding: 30rpx;box-sizing: border-box; height: 180rpx;align-items: center;border-bottom: 1px solid #F2F2F2;}
+.avatar{width: 100rpx;height: 100rpx;position: relative;padding-right: 30rpx;}
+.avatar .img{width: 100%;height: 100%;}
+.avatar .doyen{width: 40rpx;height: 40rpx;position: absolute;bottom: -2px;right: 20rpx;}
+.expertInfo{font-size: 12px;flex-grow: 2;color: #B0B0B0;line-height: 1.5em;}
+.expertInfo .name{font-size: 16px;color:#000;margin-bottom: 6px;}
+.askBtn{ width: 120rpx;height: 60rpx;line-height: 60rpx;text-align: center;font-size: 14px; border-radius: 60rpx;border: 1px solid #4675F9; color:#4675F9;}
+.tab-content{margin-top: 90rpx;}
+.scoll-h{height: 100%;}
+
+.item_list{
+  margin-top: 5rpx
+}
+
+
+/*CSS3 loading End*/
+/*底部begin*/
+.footer {
+    width: 100%;
+    height: 98rpx;
+    border-top: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.footer-nav {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-align: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+}
+.footer-nav navigator {
+    height: 98rpx;
+    text-align: center;
+    padding-top: 8rpx;
+    -webkit-box-flex: 1;
+    display: block;
+    font-size: 20rpx;
+}
+.footer-nav image{
+  width: 55rpx;
+  height: 49rpx;
+  margin: 0 auto;
+}
+.footer-nav text{
+  color: #888888;
+  line-height: 24rpx;
+  margin-top: 16rpx;
+}
+
+
+/*猜你喜欢 begin*/
+.like-top {
+    width: 520rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    position: relative;
+    color: #888888;
+    font-size: 30rpx;
+    margin: 27rpx auto;
+}
+.liketop-name {
+    position: absolute;
+    width: 194rpx;
+    height: 30rpx;
+    left: 163rpx;
+    top: 0;
+    background: #eeeeee url(../images/likestar.png) no-repeat 18rpx 4rpx;
+    background-size: 26rpx 22rpx;
+    z-index: 2;
+    text-align: center;
+    text-indent: 52rpx;
+}
+.liketop-line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    top: 14.5rpx;
+    left: 0;
+    z-index: 1;
+}
+.like-list{
+  overflow: hidden;
+}
+.like-list navigator {
+    width: 345rpx;
+    float: left;
+    vertical-align: top;
+    border: 1px solid #f2f2f2;
+    background-color: white;
+    margin-bottom: 8rpx;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.like-list navigator.like-lilf {
+     /* margin: 10 15rpx 20rpx;  */
+     margin-left: 20rpx;
+     margin-bottom: 20rpx;
+}
+.likepro-img, .likepro-img image {
+  width: 100%;
+  height: 300rpx;
+    /* width: 250rpx; */
+    /* height: 250rpx; */
+}
+.likepro-img {
+    /* margin: 50rpx auto; */
+}
+.plr26 {
+    padding-left: 26rpx;
+    padding-right: 26rpx;
+}
+.likepro-name {
+    color: #222;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.likepro-price {
+    line-height: 40rpx;
+    margin-bottom: 10rpx;
+}
+.likepro-price .fl {
+    color: #fd3f3f;
+    font-size: 22rpx;
+}
+.likepro-price .fl text {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.likepro-price .fr {
+    font-size: 24rpx;
+    color: #b5b5b5;
+    text-decoration: line-through;
+}
+/*猜你喜欢 end*/
+/*CSS3 loading */
+
+
+.backgroundview{
+
+  width: 200rpx;
+  height: 200rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

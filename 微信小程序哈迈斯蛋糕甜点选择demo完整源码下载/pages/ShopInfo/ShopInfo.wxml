@@ -1,0 +1,37 @@
+<view class="mycontainer">
+  <view bindtap="bindViewTap" class="shop-info">
+    <text class="shop-name">{{shop.name}}</text>
+    <image class="shop-icon" src="{{shop.icon}}" background-size="cover"></image>
+  </view>
+  <view class="shop-desc">
+    <text class="shop-dexc-text">{{shop.desc}}</text>
+  </view>
+
+  <!-- <view class="address btn-line" bindtap="showAddress">
+    <image class="icon" src="/image/address.png"></image>
+    <text class="line-content">小酒窝私家定制</text>
+    <image class="icon right" src="/image/arrow-right.png"></image>
+  </view> -->
+  <view class="btn-line" data-phone='{{shop.phoneNum1}}' bindtap="dialPhone">
+    <image class="icon" src="/image/phone.png"></image>
+    <text class="line-content phone-number">{{shop.phoneNum1}}</text>
+    <image class="icon right" src="/image/arrow-right.png"></image>
+  </view>
+  <view class="btn-line" data-phone='{{shop.phoneNum2}}' bindtap="dialPhone">
+    <image class="icon" src=""></image>
+    <text class="line-content  phone-number">{{shop.phoneNum2}}</text>
+    <image class="icon right" src="/image/arrow-right.png"></image>
+  </view>
+  <!-- <view class="btn-line" data-phone='0755-29178474' bindtap="dialPhone">
+    <image class="icon" src=""></image>
+    <text class="line-content phone-number">0755-29178474</text>
+    <image class="icon right" src="/image/arrow-right.png"></image>
+  </view> -->
+  <view class="btn-line">
+    <image class="icon" src="/image/hint.png"></image>
+    <text class="line-content">购买须知</text>
+  </view>
+  <text class="line-content">{{shop.purchaseNote}}</text>
+  <!-- <text>微信号：{{shop.wechat}}</text> -->
+
+</view>

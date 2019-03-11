@@ -1,0 +1,14 @@
+
+<template name="footer">
+	<view class="like-list clearfix" id="like_list">
+			<navigator class="like-lilf" url="" wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+				<view class="likepro-img"><image mode='aspectFill' 
+        data-img="{{item.filePathCover}}" src="https://maikezhang.oss-cn-shanghai.aliyuncs.com/{{item.filePathCover}}"  bindtap="showImg" data-name="{{item.name}}" alt=""></image></view>
+				<view class="likepro-name plr26 text-elli">{{item.name}}</view>
+				<view class="likepro-price clearfix plr26"><text class="fl">￥<text>{{item.price}}</text></text></view>
+			</navigator>
+		
+	</view>
+
+  
+ </template>

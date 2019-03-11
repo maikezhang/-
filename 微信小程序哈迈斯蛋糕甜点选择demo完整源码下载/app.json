@@ -1,0 +1,32 @@
+{
+  "pages": [
+
+    "pages/index_dimple/index_dimple",
+    "pages/ShopInfo/ShopInfo",
+    "pages/show-img/show-img"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小酒窝",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index_dimple/index_dimple",
+        "text": "首页",
+        "iconPath": "image/back_to_home.png",
+        "selectedIconPath": "image/ba_active.png"
+      },
+      {
+        "pagePath": "pages/ShopInfo/ShopInfo",
+        "text": "商家信息",
+        "iconPath": "image/person.png",
+        "selectedIconPath": "image/back_person.png"
+      }
+    ]
+  }
+}

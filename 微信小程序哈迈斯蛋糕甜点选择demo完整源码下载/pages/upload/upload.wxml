@@ -1,0 +1,22 @@
+<view >
+<text>商品名称</text>
+<input type='text' value="{{itemName}}" bindblur='itemNameInput'></input>
+<text>商品价格</text>
+<input type='text' value="{{itemPrice}}"></input>
+<text>商品描述</text>
+<input type='text' value="{{itemDesc}}"></input>
+<text>商品封面</text>
+
+
+ <view  wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+  <image src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+  <view  data-index="{{index}}" catchtap="deleteImg"></view>
+ </view>
+ <view class='chooseImage'  bindtap="chooseImg">
+ <button>sdfe</button>
+ </view>
+
+</view>
+<view class="billing-btn">
+<button class='button' type='warn' bindtap="bindSubmit">提交</button>
+</view>

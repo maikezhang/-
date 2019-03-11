@@ -1,0 +1,55 @@
+.mycontainer {
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+}
+
+.shop-name {
+  float: left;
+  padding-top: 30rpx;
+  font-size: 52rpx;
+  font-weight: bold;  
+}
+
+.shop-icon {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  float: right;  
+  box-sizing: border-box;
+}
+
+.shop-desc {
+  clear:both;
+  font-size: 32rpx;
+  padding-bottom: 18rpx;
+  border-bottom: 1rpx dotted #000;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.btn-line {
+  height: 48px;  
+  display: flex;
+  align-items: center;
+}
+
+.line-content {
+  padding-left: 10rpx;
+  color: #353535;  
+  margin-bottom: 4rpx;
+  letter-spacing: 4rpx;
+  line-height: 1.5;
+}
+
+.phone-number {
+  letter-spacing: 2rpx;
+}

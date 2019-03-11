@@ -1,0 +1,25 @@
+
+ <view >
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+
+       <view class="tab-item {{currentTab==item.id?'active':''}}"        bindtap="swichNav"  wx:for="{{tabDatas}}"  wx:for-item="item" wx:for-index="index"data-current="{{item.id}}">
+       {{item.name}}
+       </view>
+    </scroll-view>
+
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3]}}">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <import src="template/footer.wxml"/>
+                <template is="footer" data="{{ items }}"/>
+            </scroll-view>
+        </swiper-item>
+    </swiper> 
+
+
+    
+  
+</view>
+
+<!-- <view wx.for="{{tabDatas}}" >{{item.title}}</view> -->

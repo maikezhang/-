@@ -1,0 +1,6 @@
+com/platform/controller/MpMenuController.class
+com/platform/entity/ComplexButton.class
+com/platform/entity/Button.class
+com/platform/entity/ClickButton.class
+com/platform/entity/ViewButton.class
+com/platform/entity/Menu.class

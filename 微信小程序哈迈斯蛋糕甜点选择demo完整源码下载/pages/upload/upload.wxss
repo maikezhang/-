@@ -1,0 +1,31 @@
+/* pages/upload.wxss */
+
+.chooseImage {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  float: right;  
+  box-sizing: border-box;
+}
+
+.jiatupian{
+  width: 60px;
+  height: 60px;
+  text-align: center;
+ margin: 10px;
+
+  border: rgb(223,223,223) 2px solid;
+  float: left;
+}
+
+.button {
+  border-radius: 0;
+}
+
+
+.billing-btn {
+  z-index:2;
+  position: fixed;
+  bottom: 100rpx;
+  width: 100%;
+}
